@@ -1,0 +1,32 @@
+services:
+  web-client:
+    image: stayking-house/web-client
+    container_name: "stayking-house-web-client"
+    profiles:
+      - local
+      - dev
+      - prod
+    build:
+      context: ../submodules/web-client
+      dockerfile: Dockerfile.local
+    volumes:
+      - ../submodules/web-client:/app
+      - /app/web-client/node_modules
+    environment:
+      REACT_APP_APP_ENV: ${APP_ENV}
+      REACT_APP_WEB_CLIENT_PORT: ${WEB_CLIENT_PORT}
+      REACT_APP_API_SERVER_URL: ${API_SERVER_URL}
+    ports:
+      - "${WEB_CLIENT_PORT}:${WEB_CLIENT_PORT}"
+    stdin_open: true
+    ulimits:
+      nproc: 65535
+      nofile:
+        soft: 65535
+        hard: 65535
+    restart: unless-stopped
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "5"

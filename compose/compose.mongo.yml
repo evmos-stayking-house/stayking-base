@@ -1,0 +1,39 @@
+services:
+  mongo:
+    image: stayking-house/mongo
+    container_name: "stayking-house-mongo"
+    profiles:
+      - local
+      - dev
+      - prod
+    build:
+      context: ../docker/mongo
+      dockerfile: Dockerfile
+    volumes:
+      - ../data/mongo:/data/db
+      - ../docker/mongo/init/:/docker-entrypoint-initdb.d/
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: rootpassword
+      MONGO_PROTOCOL: ${MONGO_PROTOCOL}
+      MONGO_INITDB_DATABASE: ${MONGO_DATABASE}
+      MONGO_INITDB_USERNAME: ${MONGO_USERNAME}
+      MONGO_INITDB_PASSWORD: ${MONGO_PASSWORD}
+    ports:
+      - "27017:27017"
+    ulimits:
+      nproc: 65535
+      nofile:
+        soft: 65535
+        hard: 65535
+    restart: unless-stopped
+    healthcheck:
+      test: [ "CMD", "docker-healthcheck" ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "5"
