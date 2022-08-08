@@ -14,3 +14,7 @@
 	path = submodules/scheduled-worker
 	url = git@github.com:evmos-stayking-house/scheduled-worker.git
 	branch = main
+[submodule "submodules/scheduled-worker-golang"]
+	path = submodules/scheduled-worker-golang
+	url = git@github.com:evmos-stayking-house/scheduled-worker-golang.git
+	branch = main
