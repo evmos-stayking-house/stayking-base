@@ -12,6 +12,7 @@ services:
     volumes:
       - ../submodules/web-client:/app
       - /app/node_modules
+      - /app/.next
     environment:
       REACT_APP_APP_ENV: ${APP_ENV}
       REACT_APP_WEB_CLIENT_PORT: ${WEB_CLIENT_PORT}

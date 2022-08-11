@@ -47,4 +47,4 @@ select yn in "${options[@]}"; do
         "Prune" ) stop;  prune; break;;
         "Quit" ) exit;;
     esac
-don
+done
