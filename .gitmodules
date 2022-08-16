@@ -2,10 +2,6 @@
 	path = submodules/web-client
 	url = git@github.com:evmos-stayking-house/web-client.git
 	branch = main
-[submodule "submodules/api-server"]
-	path = submodules/api-server
-	url = git@github.com:evmos-stayking-house/api-server.git
-	branch = main
 [submodule "submodules/defi-contract"]
 	path = submodules/defi-contract
 	url = git@github.com:evmos-stayking-house/defi-contract.git
