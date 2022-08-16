@@ -9,7 +9,7 @@ function copy_envfiles_and_directories () {
 
 # Git submodule 초기화
 function init_and_update_submodules() {
-  echo ">> Initialize and update fairy repository submodules <<"
+  echo ">> Initialize and update Evmos-Stayking-House repository submodules <<"
   git submodule init && git submodule update
 }
 

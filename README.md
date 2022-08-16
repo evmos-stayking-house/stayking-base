@@ -137,7 +137,7 @@ git clone --recursive git@github.com:evmos-stayking-house/stayking-finance.git
 ```
 git submodule add -b main git@github.com:evmos-stayking-house/web-client.git submodules/web-client
 
-git submodule add -b main git@github.com:evmos-stayking-house/api-server.git submodules/api-server
+git submodule add -b main git@github.com:evmos-stayking-house/scheduled-worker-golang.git submodules/scheduled-worker-golang
 
 git submodule add -b main git@github.com:evmos-stayking-house/defi-contract.git submodules/defi-contract
 

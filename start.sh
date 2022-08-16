@@ -3,8 +3,7 @@
 CMD="docker-compose \
   -p evmos-stayking-house \
   -f compose/compose.mongo.yml \
-  -f compose/compose.web-client.yml \
-  -f compose/compose.api-server.yml"
+  -f compose/compose.web-client.yml"
 
 function build()
 {
