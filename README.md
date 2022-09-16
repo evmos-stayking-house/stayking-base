@@ -18,8 +18,8 @@ It helps lenders earn safe and stable yields, and offers borrowers loans for lev
 
     - [web-client](https://github.com/evmos-stayking-house/web-client) : This submodule repo is the web service to interact with various contracts on EVMOS chain 
     - [defi-contract](https://docs.docker.com/desktop/mac/install/) : This submodule repo is the DeFi contracts developed by solidity language
-    - [scheduled-worker]() : The purpose of this repository is to run a liquidation bot every minute
-    - [scheduled-worker-golang]() : The purpose of this repository is to subscribe to events in the Cosmos and EVMOS chains to handle certain functions such as auto compound, contract function call, etc
+    - [scheduled-worker](https://github.com/evmos-stayking-house/scheduled-worker) : The purpose of this repository is to run a liquidation bot every minute
+    - [scheduled-worker-golang](https://github.com/evmos-stayking-house/scheduled-worker-golang) : The purpose of this repository is to subscribe to events in the Cosmos and EVMOS chains to handle certain functions such as auto compound, contract function call, etc
 
 
 ## Getting Started
