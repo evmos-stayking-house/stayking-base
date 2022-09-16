@@ -63,7 +63,7 @@ Press control + c to go to the command line and execute the command below
 - Quit : Nothing to do
 
 ### Update to the latest source
-Must be entered manually if github is not set
+Must be entered manually if GitHub is not set
 ```sh
 ./update.sh
 ```
