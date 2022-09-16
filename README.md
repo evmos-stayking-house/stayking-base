@@ -42,7 +42,6 @@ Docker must be pre-installed to run the script below
     - hardhat node must be run in this mode. check submodules/defi-contract repository first
 - [Dev Mode]
     - Load development environment variables ( Test-Net: evmos_9000-4 )
-
 - [Prod Mode]
     - Not Used yet
       
@@ -58,10 +57,10 @@ Press control + c to go to the command line and execute the command below
 
 ### Options
 
-- Kill & Remove : 현재 실행 중인 컨테이너 종료 및 삭제
-- Remove Images : 현재 실행 중인 컨테이너 종료 및 삭제. 그리고 다운 받은 모든 이미지 삭제
-- Prune : 현재 중지 된 모든 컨테이너, 사용 안하는 이미지, 네트워크, 볼륨 그리고 빌드 캐시 삭제
-- Quit : 아무것도 안 함
+- Kill & Remove : Shutting down and deleting the currently running container
+- Remove Images : End of the currently executing a container and delete. And all downloaded images deleted
+- Prune : Delete all currently stopped containers, unused images, networks, volumes, and build cache
+- Quit : Nothing to do
 
 ### Update to the latest source
 Must be entered manually if github is not set
@@ -84,7 +83,7 @@ Must be entered manually if github is not set
    - documentation materials
 
  - **submodules**
-    - an independent service module repository
+    - independent service modules for each purpose
 
 ## Git Submodule management
 
