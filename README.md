@@ -1,19 +1,19 @@
 ## 2022 EVMOS Hackathon StayKing House (DeFi)
 
----
+
 Evmos StayKing House is the largest lending protocol allowing leveraged staking on Cosmos and EVMOS Chain.
 It helps lenders earn safe and stable yields, and offers borrowers loans for leveraged yield staking positions, vastly multiplying their staking principals and resulting profits.
 
 
+
 ## Our Service
 
----
   https://evmos.stayking.xyz
 ![img.png](img.png)
 
+
 ## Modules
 
----
   - [stayking-finance](https://github.com/evmos-stayking-house/stayking-finance) (root) : This repo is the root repository to execute entire modules with docker-compose
 
     - [web-client](https://github.com/evmos-stayking-house/web-client) : This submodule repo is the web service to interact with various contracts on EVMOS chain 
@@ -24,7 +24,6 @@ It helps lenders earn safe and stable yields, and offers borrowers loans for lev
 
 ## Getting Started
 
----
 It will copy environment variable file and initialize submodules on your machine
 
 ```sh
@@ -51,7 +50,6 @@ Docker must be pre-installed to run the script below
 
 ## Termination of Service
 
----
 Press control + c to go to the command line and execute the command below 
 
 ```sh
@@ -73,7 +71,6 @@ Must be entered manually if github is not set
 
 ## Folder Structure
 
----
  - **compose**
    - docker-compose configuration files
 
@@ -91,7 +88,6 @@ Must be entered manually if github is not set
 
 ## Git Submodule management
 
----
 ### register git submodules
 
 ```
