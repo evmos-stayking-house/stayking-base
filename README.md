@@ -1,7 +1,7 @@
 ## 2022 EVMOS Hackathon StayKing House (DeFi)
 
 
-Evmos StayKing House is the largest lending protocol allowing leveraged staking on Cosmos and EVMOS Chain.
+Evmos StayKing House is the leverage staking protocol on Cosmos and EVMOS Chain.
 It helps lenders earn safe and stable yields, and offers borrowers loans for leveraged yield staking positions, vastly multiplying their staking principals and resulting profits.
 
 
