@@ -9,6 +9,34 @@ EVMOS StayKing House is a decentralized finance protocol that allows stakers to 
   https://evmos.stayking.xyz
 ![img.png](img.png)
 
+## Test Accounts
+- You can test with our service with test accounts we provided below
+  - Lender ( Bob ) PK
+  ```
+  53242286ee73afefa2bd5522e2937b13f46a71f9fb7ab186e12d5b55818b029b
+  ```
+  - Staker ( Alice ) PK
+  ```
+  491bbf9237c55c649d41f5a105cc89e3bcba1337af236d4f681491e2061489f1
+  ```
+- If there is no tEVMOS or USDC token in the accounts above, please email us `gloryan@icloud.com`. we'll fill the tokens in the accounts
+
+
+## Deployed the contracts on the testnet (evmos_9000-4)
+
+```
+    [mockUSDC] 0x9218b75D53612212137890354B1a16163Abb9DE3
+
+    [MockSwap] 0x08Be1FDf4A512fc6caA7aE1Be029b922d05EA5B3
+
+    [TripleSlopeModel] 0x739DDcC9e458bD0A88c0882aca7BB72EaFff8781
+
+    [UnbondedEvmos] 0x20E3f88438ef008256BA40e5D265fb49ADc7fBeF
+
+    [Stayking] 0x5c16AD45ec86A50a59b4fe7d9B205aCa2100de2f
+
+    [Vault] 0xa6c036c12b65703Bd7C0e4F42Dc0E75f74675C64
+```
 
 ## Modules
 
