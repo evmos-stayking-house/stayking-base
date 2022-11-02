@@ -1,7 +1,7 @@
 services:
   mongo:
     image: stayking-house/mongo
-    container_name: "stayking-house-mongo"
+    container_name: "stayking-mongodb"
     profiles:
       - local
       - dev

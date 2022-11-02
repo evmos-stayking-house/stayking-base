@@ -1,16 +1,16 @@
 services:
-  web-client:
-    image: stayking-house/web-client
-    container_name: "stayking-house-web-client"
+  web-interface:
+    image: stayking-house/web-interface
+    container_name: "stayking-web-interface"
     profiles:
       - local
       - dev
       - prod
     build:
-      context: ../submodules/web-client
+      context: ../submodules/web-interface
       dockerfile: Dockerfile.local
     volumes:
-      - ../submodules/web-client:/app
+      - ../submodules/web-interface:/app
       - /app/.next
     environment:
       NEXT_PUBLIC_APP_ENV: ${APP_ENV}

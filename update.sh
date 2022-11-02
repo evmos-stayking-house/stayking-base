@@ -41,10 +41,11 @@ function menu()
 {
   PS3="최신 소스를 가져올 Branch를 선택하세요 > "
   COLUMNS=30
-  options=("Main branch" "Quit")
+  options=("main branch" "develop branch" "Quit")
   select yn in "${options[@]}"; do
       case $yn in
-          "Main branch" )     run_update main;    break;;
+          "main branch" )     run_update main;    break;;
+          "develop branch" )     run_update develop;    break;;
           "Quit" )            exit;;
       esac
   done
