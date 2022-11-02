@@ -1,0 +1,16 @@
+[submodule "submodules/web-interface"]
+	path = submodules/web-interface
+	url = git@github.com:evmos-stayking-house/web-interface.git
+	branch = main
+[submodule "submodules/interchain-app"]
+	path = submodules/interchain-app
+	url = git@github.com:evmos-stayking-house/interchain-app.git
+	branch = main
+[submodule "submodules/evm-contract"]
+	path = submodules/evm-contract
+	url = git@github.com:evmos-stayking-house/evm-contract.git
+	branch = main
+[submodule "submodules/interchain-worker"]
+	path = submodules/interchain-worker
+	url = git@github.com:evmos-stayking-house/interchain-worker.git
+	branch = main

@@ -1,13 +1,11 @@
-## 2022 EVMOS Hackathon StayKing House (DeFi)
-
+## 2022 EVMOS StayKing House (DeFi)
 
 EVMOS StayKing House is a decentralized finance protocol that allows stakers to maximize their yields and lenders to earn stable profit by lending their assets to stakers using leverage. We aim in creating better and wider profit – generating opportunities for all participants.
 
-
 ## Our Service
+https://evmos.stayking.xyz
 
-  https://evmos.stayking.xyz
-![img.png](img.png)
+```Currently we are workig on it please wait for a while to use it```                                                    
 
 ## Test Accounts
 - You can test with our service with test accounts we provided below
@@ -40,12 +38,12 @@ EVMOS StayKing House is a decentralized finance protocol that allows stakers to 
 
 ## Modules
 
-  - [stayking-finance](https://github.com/evmos-stayking-house/stayking-finance) (root) : This repo is the root repository to execute entire modules with docker-compose
+  - [stayking-base](https://github.com/evmos-stayking-house/stayking-base) (root) : This repo is the root repository to execute entire modules with docker-compose
 
-    - [web-client](https://github.com/evmos-stayking-house/web-client) : This submodule repo is the web service to interact with DeFi contracts on EVMOS chain 
-    - [defi-contract](https://github.com/evmos-stayking-house/defi-contract) : This submodule repo is the DeFi contracts developed by solidity language
-    - [scheduled-worker](https://github.com/evmos-stayking-house/scheduled-worker) : The purpose of this repository is to run a liquidation bot every minute
-    - [scheduled-worker-golang](https://github.com/evmos-stayking-house/scheduled-worker-golang) : The purpose of this repository is to subscribe to events in the Cosmos and EVMOS chains to handle certain functions such as auto compound, contract function call, etc
+    - [web-interface](https://github.com/evmos-stayking-house/web-interface) : This submodule repo is the web service to interact with DeFi contracts on EVMOS chain 
+    - [evmos-evm-contract](https://github.com/evmos-stayking-house/evm-contract) : This submodule repo is the DeFi contracts developed by solidity language
+    - [interchain-worker](https://github.com/evmos-stayking-house/interchain-worker) : The purpose of this repository is to run a liquidation bot every minute
+    - [interchain-app](https://github.com/evmos-stayking-house/interchain-app) : The purpose of this repository is to subscribe to events in the Cosmos and EVMOS chains to handle certain functions such as auto compound, contract function call, etc
 
 
 ## Getting Started
@@ -116,13 +114,13 @@ Must be entered manually if GitHub is not set
 ### register git submodules
 
 ```
-git submodule add -b main git@github.com:evmos-stayking-house/web-client.git submodules/web-client
+git submodule add -b main git@github.com:evmos-stayking-house/web-interface.git submodules/web-interface
 
-git submodule add -b main git@github.com:evmos-stayking-house/scheduled-worker-golang.git submodules/scheduled-worker-golang
+git submodule add -b main git@github.com:evmos-stayking-house/interchain-app.git submodules/interchain-app
 
-git submodule add -b main git@github.com:evmos-stayking-house/defi-contract.git submodules/defi-contract
+git submodule add -b main git@github.com:evmos-stayking-house/evm-contract.git submodules/evm-contract
 
-git submodule add -b main git@github.com:evmos-stayking-house/scheduled-worker.git submodules/scheduled-worker
+git submodule add -b main git@github.com:evmos-stayking-house/interchain-worker.git submodules/interchain-worker
 ```
 
 ### unregister git submodules
